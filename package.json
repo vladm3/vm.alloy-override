@@ -1,0 +1,30 @@
+{
+  "name": "vm.alloy-override",
+  "version": "0.1.0",
+  "description": "A Titanium CLI plugin to override or restrict Alloy version on a per project basis",
+  "keywords": [
+    "appcelerator",
+    "titanium-cli-plugin"
+  ],
+  "scripts": {
+    "postinstall": "ti-plugin-install -p vm.alloy-override --tiapp",
+    "postupdate": "ti-plugin-install -p vm.alloy-override --tiapp"
+  },
+  "author": {
+    "name": "Vlad Misyura",
+    "email": "vlad.misyura@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladm3/vm.alloy-override.git"
+  },
+  "main": "./lib/AlloyLocalPlugin.js",
+  "license": "MIT",
+  "dependencies": {
+    "resolve-package": "^1.0.1",
+    "ti-plugin-install": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0"
+  }
+}
